@@ -8,7 +8,7 @@ export class createCpfTable1615563949573 implements MigrationInterface {
       columns: [
         {
           name: 'id',
-          type: 'uuid',
+          type: 'varchar',
           isPrimary: true,
         },
 

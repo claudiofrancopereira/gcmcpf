@@ -1,11 +1,14 @@
-import express from 'express';
+import { Router } from 'express';
 
-const routes = express.Router()
+import CPFController from './controllers/CPFController';
+import AbordagemController from './controllers/AbordagemController';
 
-routes.get('/users', (request, response) => {
-    return response.json({
-        teste: 'Hello World'
-    });
-});
+const routes = Router()
+
+routes.post('/cpf', CPFController.create);
+routes.get('/cpf', CPFController.index);
+routes.get('/cpf/:id', CPFController.show);
+
+routes.post('/abordagem', AbordagemController.create)
 
 export default routes;
