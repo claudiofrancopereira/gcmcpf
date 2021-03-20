@@ -9,11 +9,5 @@ module.exports = {
   migrations: [process.env.TYPEORM_MIGRATIONS],
   cli: {
     "migrationsDir": process.env.TYPEORM_MIGRATIONS_DIR,
-  },
-  ssl: false,
-  extra: {
-    ssl: {
-      rejectUnauthorized: false
-    }
-}
+  }, 
 }
