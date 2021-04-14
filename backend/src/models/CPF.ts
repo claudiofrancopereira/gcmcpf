@@ -18,6 +18,9 @@ export default class CPF {
     address: string;
 
     @Column()
+    city: string;
+
+    @Column()
     contact: string;
 
     @CreateDateColumn()

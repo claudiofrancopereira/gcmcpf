@@ -18,18 +18,14 @@ export default {
         }
 
         const {
-            address,
-            date,
-            time,
+            location,
             gcm,
             obs,
         } = request.body
         
 
         const abordagem = AbordagemRepository.create({
-            address,
-            date,
-            time,
+            location,
             gcm,
             obs,
             cpf_id

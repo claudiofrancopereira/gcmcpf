@@ -16,15 +16,18 @@ export default {
     },
 
     async show(request: Request, response: Response) {
-        const { id } = request.params;
+        const { cpf } = request.params;
 
         const CPFRepository = getRepository(CPF);
 
-        const cpf = await CPFRepository.findOneOrFail(id, {
-            relations: ['abordagens']
-        })
+        const cpfOK = await CPFRepository.findOne({ cpf_number: cpf }, { 
+            relations: ['abordagens'] }); 
+        
+        if (!cpfOK)
+            return response.json(cpfOK);
 
-        return response.json(cpfView.render(cpf));
+        return response.json(cpfView.render(cpfOK));            
+        
     },
 
     async create(request: Request, response: Response) {
@@ -34,6 +37,7 @@ export default {
             cpf_number,
             name,
             address,
+            city,
             contact
         } = request.body
         
@@ -45,6 +49,7 @@ export default {
                 cpf_number,
                 name,
                 address,
+                city,
                 contact
             });
 

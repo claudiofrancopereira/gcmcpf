@@ -9,13 +9,7 @@ export default class Abordagem {
     readonly id: string;
 
     @Column()
-    address: string;
-
-    @Column()
-    date: string;
-
-    @Column()
-    time: string;
+    location: string;
 
     @Column()
     gcm: string;

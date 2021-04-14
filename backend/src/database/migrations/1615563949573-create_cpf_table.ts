@@ -26,6 +26,11 @@ export class createCpfTable1615563949573 implements MigrationInterface {
           name: 'address',
           type: 'varchar'
         },
+
+        {
+          name: 'city',
+          type: 'varchar'
+        },
         
         {
           name: 'contact',

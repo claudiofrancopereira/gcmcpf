@@ -7,7 +7,7 @@ const routes = Router()
 
 routes.post('/cpf', CPFController.create);
 routes.get('/cpf', CPFController.index);
-routes.get('/cpf/:id', CPFController.show);
+routes.get('/cpf/:cpf', CPFController.show);
 
 routes.post('/abordagem', AbordagemController.create)
 

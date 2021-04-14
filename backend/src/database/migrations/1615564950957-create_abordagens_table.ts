@@ -18,17 +18,7 @@ export class createAbordagensTable1615564950957 implements MigrationInterface {
         },
 
         {
-          name: 'address',
-          type: 'varchar',
-        },
-
-        {
-          name: 'date',
-          type: 'varchar',
-        },
-
-        {
-          name: 'time',
+          name: 'location',
           type: 'varchar',
         },
 
@@ -40,13 +30,14 @@ export class createAbordagensTable1615564950957 implements MigrationInterface {
         {
           name: 'obs',
           type: 'text',
+          isNullable: true
         },
 
         {
           name: 'created_at',
           type: 'timestamp',
           default: 'now()',
-        }
+        },
       ],
 
       foreignKeys: [
