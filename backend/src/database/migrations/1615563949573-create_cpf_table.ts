@@ -39,7 +39,7 @@ export class createCpfTable1615563949573 implements MigrationInterface {
 
         {
           name: 'created_at',
-          type: 'timestamp',
+          type: 'timestamptz',
           default: 'now()',
         },
       ]

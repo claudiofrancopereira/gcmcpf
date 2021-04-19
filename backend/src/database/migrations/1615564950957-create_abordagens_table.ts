@@ -35,7 +35,7 @@ export class createAbordagensTable1615564950957 implements MigrationInterface {
 
         {
           name: 'created_at',
-          type: 'timestamp',
+          type: 'timestamptz',
           default: 'now()',
         },
       ],

@@ -10,12 +10,12 @@
     "typeorm": "tsnd ./node_modules/typeorm/cli.js"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "pg": "^8.5.1",
     "reflect-metadata": "^0.1.13",
     "typeorm": "^0.2.32",
-    "cors": "^2.8.5",
     "uuid": "^8.3.2"
   },
   "devDependencies": {
@@ -25,5 +25,4 @@
     "ts-node-dev": "^1.1.6",
     "typescript": "^4.2.3"
   }
-  
 }
