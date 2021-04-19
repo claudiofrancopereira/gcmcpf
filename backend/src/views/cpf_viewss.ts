@@ -11,7 +11,7 @@ export default {
             address: cpf.address,
             city: cpf.city,
             contact: cpf.contact,
-            abordagens: abordagemsView.renderMany(cpf.abordagens)
+            abordagens: abordagemsView.renderMany(cpf.abordagens),
         }
     },
 
